@@ -1,0 +1,17 @@
+name: Bug report / 不具合の報告
+description: Something on the site does not work / サイトの不具合
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened / 起きたこと
+      description: The page URL, what you did, and what you expected. / ページの URL、したこと、期待したこと
+    validations:
+      required: true
+  - type: textarea
+    id: program
+    attributes:
+      label: Program (optional) / プログラム（任意）
+      description: The Piet source in text format, if it is about running or grading. / 実行や採点についてなら、テキスト形式のソース
+      render: text

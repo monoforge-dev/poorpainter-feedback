@@ -1,0 +1,17 @@
+name: Data deletion request / データの削除
+description: Delete your Poor Painter account data and submissions / ユーザーと提出を消す
+title: "Delete my data"
+labels: ["data-deletion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this issue from the GitHub account you used to log in to Poor Painter. We delete that user and all of its submissions, then close this issue.
+        Poor Painter にログインした GitHub アカウントで開いてください。そのユーザーとすべての提出を消して、この issue を閉じます。
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm / 確認
+      options:
+        - label: I understand that my submissions and ranking entries will be deleted and cannot be restored. / 提出とランキングの記録は消え、元に戻せないことを理解しました。
+          required: true
